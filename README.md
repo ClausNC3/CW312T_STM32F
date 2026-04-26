@@ -3,7 +3,7 @@
 This board supports the STMicroelectronics STM32F microcontroller. The default build
 has the STMicroelectronics STM32F405VGT6, which has 1MB flash and 192kB SRAM.
 
-!\[](Images/CW312T-STM32F-Render.png)
+![](Images/CW312T-STM32F-Render.png)
 
 \---
 
