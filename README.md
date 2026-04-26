@@ -14,18 +14,19 @@ has the STMicroelectronics STM32F405VGT6, which has 1MB flash and 192kB SRAM.
 |Target Device|STM32F405VGT6|
 |Target Architecture|Arm Cortex-M4|
 |Vcc|3.3V|
-|Programming|Bootloader or JTAG|
+|Programming|STM32F Serial Bootloader, JTAG or SWD|
 |Hardware Crypto|No|
 |Availability|Standalone|
 |Status|Released|
 |Shunt|10Ω|
+
+---
 
 ## Power Supply
 
 ---
 
 ## Programming
-
 
 ### **ChipWhisperer Programmer via Bootloader**
 
@@ -44,7 +45,7 @@ Windows](https://www.olimex.com/Products/ARM/JTAG/ARM-USB-OCD-H/)
 software:
 
     openocd
-      -f path/to/board/files/cw308.cfg
+      -f path/to/board/files/cw313.cfg
       -c init
       -c targets
       -c "halt"
@@ -59,7 +60,34 @@ where the contents of `cw313.cfg` are
     source [find target/stm32f4x.cfg]
     reset_config srst_only
 
-\---
+### **Programming via ChipWhisperer Bootloader**
+
+The STM32F devices have a built-in bootloader, and the ChipWhisperer
+software as of 3.5.2 includes support for this bootloader.
+
+Important notes before we begin:
+
+  - You MUST setup a clock and the serial lines for the chip. This is
+    easily done by connecting to the scope and target, then running
+    `default_setup()`:
+
+<!-- end list -->
+
+``` python
+import chipwhisperer as cw
+scope = cw.scope
+target = cw.target(scope)
+scope.default_setup()
+```
+
+Run the following python code once you have the scope and target set up:
+
+``` python
+prog = cw.programmers.STM32FProgrammer
+cw.program_target(scope, prog, "<path to fw hex file>")
+```
+
+---
 
 ## Schematic
 
@@ -67,5 +95,5 @@ The schematic is available as a [PDF](CW312T-STM32F.pdf) or below as an image:
 
 ![](Images/CW312T-STM32F.png)
 
-\---
+---
 
