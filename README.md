@@ -33,7 +33,7 @@ See further down this page for details.
 
 ### **JTAG Programmer**
 
-The 20-pin JTAG port (J6 on CW308 Board) can be used with the
+The 20-pin JTAG port (HDR6 on CW313 Board) can be used with the
 [ST-LINK/V2](https://www.digikey.com/product-detail/en/stmicroelectronics/ST-LINK-V2/497-10484-ND/2214535)
 which is a low-cost JTAG programmer.
 
@@ -53,7 +53,7 @@ software:
       -c "reset run"
       -c shutdown
 
-where the contents of `cw308.cfg` are
+where the contents of `cw313.cfg` are
 
     source [find interface/olimex-arm-usb-ocd-h.cfg]
     source [find target/stm32f4x.cfg]
