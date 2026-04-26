@@ -8264,12 +8264,6 @@
 		(uuid "af4aac8c-d222-4797-a458-3837562971c3")
 	)
 	(junction
-		(at 257.81 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b193beea-278f-4e3c-a551-f913601713f3")
-	)
-	(junction
 		(at 129.54 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8835,6 +8829,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 19.05) (xy 267.97 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ad0f67d-1a38-4c6f-9750-f109c23e72e2")
+	)
+	(wire
+		(pts
 			(xy 246.38 58.42) (xy 248.92 58.42)
 		)
 		(stroke
@@ -9235,6 +9239,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 19.05) (xy 267.97 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48b51dc6-0acf-4634-8e3e-7cd7dbb3f90f")
+	)
+	(wire
+		(pts
 			(xy 246.38 127) (xy 248.92 127)
 		)
 		(stroke
@@ -9452,6 +9466,16 @@
 			(type default)
 		)
 		(uuid "61004ba1-7c0a-4136-b564-8c89e04c3635")
+	)
+	(wire
+		(pts
+			(xy 252.73 19.05) (xy 252.73 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d062fb-37e3-4a15-9f6b-d5fa885c5e8b")
 	)
 	(wire
 		(pts
@@ -10662,16 +10686,6 @@
 			(type default)
 		)
 		(uuid "f00e4572-995c-4267-83fc-e783bbd4a8f9")
-	)
-	(wire
-		(pts
-			(xy 252.73 24.13) (xy 252.73 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0b0752d-36db-4b6e-ade5-ab5760e9bf18")
 	)
 	(wire
 		(pts
@@ -14275,7 +14289,7 @@
 	)
 	(symbol
 		(lib_id "Device:NetTie_2")
-		(at 255.27 21.59 0)
+		(at 255.27 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14286,7 +14300,7 @@
 		(fields_autoplaced yes)
 		(uuid "52b3f273-645b-488b-8980-07f61d30328a")
 		(property "Reference" "NT8"
-			(at 255.27 16.51 0)
+			(at 255.27 13.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14297,7 +14311,7 @@
 			)
 		)
 		(property "Value" "NetTie_2"
-			(at 255.27 19.05 0)
+			(at 255.27 16.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14308,7 +14322,7 @@
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 255.27 21.59 0)
+			(at 255.27 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14319,7 +14333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 21.59 0)
+			(at 255.27 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14330,7 +14344,7 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
-			(at 255.27 21.59 0)
+			(at 255.27 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
