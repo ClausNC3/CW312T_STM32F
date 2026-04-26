@@ -5,13 +5,13 @@ has the STMicroelectronics STM32F405VGT6, which has 1MB flash and 192kB SRAM.
 
 ![](Images/CW312T-STM32F-Render.png)
 
-\---
+---
 
 ## Specifications
 
 |Feature|Notes/Range|
 |-|-|
-|Target Device|STM32F|
+|Target Device|STM32F405VGT6|
 |Target Architecture|Arm Cortex-M4|
 |Vcc|3.3V|
 |Programming|Bootloader or JTAG|
@@ -22,7 +22,7 @@ has the STMicroelectronics STM32F405VGT6, which has 1MB flash and 192kB SRAM.
 
 ## Power Supply
 
-\---
+---
 
 ## Programming
 
